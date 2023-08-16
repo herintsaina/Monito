@@ -1,0 +1,252 @@
+/** npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch */
+
+body {
+    font-family: 'Gilroy';
+}
+
+/******* COLOR ********/
+/* color Dark blue */
+
+.primary-color-dark-blue {
+    color: #003459;
+}
+
+.primary-color-dark-blue40 {
+    color: #0078CD;
+}
+
+.primary-color-dark-blue60 {
+    color: #00528C;
+}
+
+.primary-color-dark-blue80 {
+    color: #002A48;
+}
+
+/* color Yellow */
+
+.secondary-color-yellow {
+    color: #F7DBA7;
+}
+
+.secondary-color-yellow40 {
+    color: #FCEED5;
+}
+
+.secondary-color-yellow60 {
+    color: #F1D092;
+}
+
+.secondary-color-yellow80 {
+    color: #EEC77E;
+}
+
+.pink-red {
+    color: #FF564F;
+}
+
+.green-light {
+    color: #34c759;
+}
+
+.orange-shine {
+    color: #ff912c;
+}
+
+/* color Neutre  */
+
+.neutral100{
+    color: #00171f;
+}
+
+.neutral80{
+    color: #242b33;
+}
+
+.neutral60{
+    color: #667479;
+}
+
+.neutral40{
+    color: #99a2a5;
+}
+
+/***** COMPONENT *********/
+
+.button-default {
+    background-color: #003459;
+    padding: 12px 28px 12px 28px;
+    border-radius: 57px;
+    color: #fff;
+    border: 1px solid transparent;
+}
+
+.button-default:hover {
+    border: 1.5px solid #003459;
+    border-radius: 57px;
+    color: #003459;
+    background-color: transparent;
+}
+
+.button-footer {
+    background-color: #003459;
+    padding: 12px 28px 12px 28px;
+    border-radius: 8px;
+    color: #fff;
+    border: 1px solid transparent;
+}
+
+.button-footer:hover {
+    border: 1.5px solid #003459;
+    border-radius: 8px;
+    color: #003459;
+    background-color: transparent;
+}
+
+.button-white{
+    padding: 12px 28px 12px 28px;
+    border: 1.5px solid #003459;
+    border-radius: 57px;
+    color: #003459;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.button-white:hover {
+    background-color: #003459;
+    border-radius: 57px;
+    color: #fff;
+    border: 1px solid transparent;
+}
+
+.button-white:hover .play-white{
+    display: block;
+}
+
+.button-white:hover .play-dark-blue{
+    display: none;
+}
+
+.button-white-reverse {
+    background-color: #003459;
+    border-radius: 57px;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 28px 12px 28px;
+    gap: 8px;
+}
+
+.button-white-reverse:hover {
+    border-radius: 57px;
+    display: flex;
+    color: #fff;
+    align-items: center;
+}
+
+.button-default-reverse {
+    background-color: #fff;
+    padding: 12px 28px 12px 28px;
+    border-radius: 57px;
+    color: #00171F;
+    border: 1px solid #fff;
+}
+
+.input-default {
+    padding: 12px 28px 12px 28px;
+    color: #99A2A5;
+    outline: none;
+    border: 1px solid #99A2A5;
+    border-radius: 8px;
+}
+
+/**** FONT FAMILY *****/
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../assets/font-family/gilroy/Gilroy-Medium.ttf'),
+         url('../assets/font-family/gilroy/Gilroy-Bold.ttf'),
+         url('../assets/font-family/gilroy/Gilroy-Regular.ttf');
+}
+
+/**** CSS personalier ******/
+
+.contenair-banner{
+    background-image: url('./assets/images/illustration/Herro-Banner.png');
+}
+
+/* header */
+
+.input-menu input {
+    padding: 12px 40px 12px 48px;
+    color: #99A2A5;
+    border-radius: 46px;
+}
+
+.select-menu option{
+    color: #34c759;
+    background-color: #00528C;
+    border-radius: 50px;
+}
+
+.select-menu option:first-child{
+    border-top-left-radius: 36px;
+    border-top-right-radius: 36px;
+
+}
+
+/****** TAKE A LOOK ******/
+.items-take{
+    box-shadow: 0px 4px 28px -2px #00000014;
+}
+
+.items-products {
+    box-shadow: 0px 4px 28px -2px #00000014;
+}
+
+/******** PRODUCTS ********/
+
+.free-toy {
+    bottom: 10px;
+}
+
+/******* USEFUL *******/
+
+.button-pet {
+    padding: 5px 10px 5px 10px;
+}
+
+.items-useful a{
+    box-shadow: 0px 4px 28px -2px #00000014;
+}
+
+.description-useful{
+    height: 150px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/****** CALENDAR **********/
+
+/***** PRICE *********/
+
+.items-price:hover .arrow {
+    display: none !important;
+}
+
+.items-price {
+    border-bottom: 1px solid #EBEEEF;
+}
+
+/******** result ********/
+
+.select-sort{
+    padding: 6px 10px 4px 20px;
+}
+
+.items-result {
+    box-shadow: 0px 4px 28px -2px #00000014;
+}

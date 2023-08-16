@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category</title>
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+</head>
+<body class="m-0">
+    <div class="contenair-category h-screen relative">
+        <div class="container m-auto bg-[#FCEED5] ">
+            <header class="flex gap-[101px] pb-3 w-full justify-between fixed pt-3 z-[51] bg-[#FCEED5] ps-[40px] pr-[40px] left-0">
+                <div class="logo flex justify-center items-center">
+                    <img src="./assets/images/icon/logo.png" alt="Logo" >
+                </div>
+                <ul class="flex gap-10 items-center">
+                    <li><a href="./index.html" class="font-bold primary-color-dark-blue">Home</a></li>
+                    <li><a href="./category.html" class="font-bold primary-color-dark-blue">Category</a></li>
+                    <li><a href="#" class="font-bold primary-color-dark-blue">About</a></li>
+                    <li><a href="#" class="font-bold primary-color-dark-blue">Contact</a></li>
+                </ul>
+                <div class="button-menu flex gap-5 justify-between">
+                    <div class="input-menu relative">
+                        <input type="text" class="outline-none h-full"  placeholder="Search something here!">
+                        <img class="absolute top-0 ps-[20px] pt-[17px]" src="./assets/images/icon/u_search.png" alt="Search">
+                    </div>
+                    <a href="#" class="button-default">Join the community</a>
+                    <div class="select-menu relative items-center flex">
+                        <img class="absolute to" src="./assets/images/icon/star.png" alt="star">
+                        <select name="vnd" id="vnd" class="bg-transparent border-none outline-0 ps-5 ">
+                            <option class="" value="vna">VND</option>
+                            <option class="" value="vnb">VNE</option>
+                            <option class="" value="vnc">VNF</option>
+                        </select>
+                    </div>
+                </div>
+            </header>
+        </div> 
+
+        <div class="container m-auto pt-[90px] content-small-dog">
+            <div class="source-page flex text-[14px]">
+                <span class="neutral60 ">Home</span>
+                <img src="./assets/images/icon/Caret_Right_SM.png" alt="Caret_Right_SM">
+                <span class="neutral60 ">Dog</span>
+                <img src="./assets/images/icon/Caret_Right_SM.png" alt="Caret_Right_SM">
+                <span class="neutral60 ">Small Dog</span>
+            </div>
+
+            <div class="content-picture-small-dog bg-[#FCEED5] flex items-center mt-[36px] relative overflow-hidden rounded-[20px]">
+                <div class="picture-banner w-3/5 relative z-10 ">
+                    <img class="w-full" src="./assets/images/illustration/group-portrait-adorable-puppies.png" alt="group-portrait-adorable-puppies">
+                </div>
+                <div class="tilte-presentation w-2/5 text-right z-[11] pr-[6.5rem]">
+                    <h1 class="text-[52px]  font-bold leading-[3.5rem] text-[#FDFDFD]">One more friend</h1>
+                    <h2 class="text-[35px]  font-bold text-[#FDFDFD]">Thousands More Fun!</h2>
+                    <p class=" text-[15px] text-[#FDFDFD]">Having a pet means you have more joy, a new
+                        friend, a happy person who Will always be with
+                        you to have fun. We have different pets
+                        that can meet your needs!</p>
+                    <div class="button-banner flex items-center gap-5 mt-4 justify-end">
+                        <a class=" flex gap-2 button-white-reverse items-center" href="#">View Intro 
+                            <img class="h-full hidden play-dark-blue" src="./assets/images/icon/Play_Circle-dark-blue.png" alt="Play_Circle-dark-blue">
+                            <img class="h-full  play-white" src="./assets/images/icon/Play_Circle.png" alt="Play_Circle"></a>
+                        <a class="button-default-reverse" href="#">Explore Now</a>
+                    </div>
+                </div>
+                <img class="absolute object-contain right-0 .z-[1]" src="./assets/images/illustration/banner-category.png" alt="Banner category">
+            </div>
+        </div>
+
+        <div class="liste-small-dog container m-auto flex flex-wrap gap-5 mt-8">
+            <div class="filter-dog w-1/5">
+                <div class="gender pb-3">
+                    <h2 class="title-genre neutral100 font-bold">Gender</h2>
+                    <input  type="checkbox" name="male" id="male" ><label class="neutral100 font-medium"  for="male">       Male</label><br>
+                    <input  class="" type="checkbox" name="female" id="female" ><label class="neutral100 font-medium"  for="female">        Female</label>
+                </div>
+
+                <hr>
+
+                <div class="color pt-3 pb-3">
+                    <h2 class="title-color neutral100 font-bold">Color</h2>
+                    <div class="liste-color">
+                        <div class="flex gap-2">
+                            <input  type="checkbox" name="red" id="red" >
+                            <label class="neutral100 font-medium  flex items-center gap-2"  for="red"><img src="./assets/images/icon/red-color.png" alt="Red color"> Red</label>
+                        </div>
+                        <div class="flex gap-2">
+                            <input  class="" type="checkbox" name="apricot" id="apricot" >
+                            <label class="neutral100 font-medium  flex items-center gap-2"  for="apricot"><img src="./assets/images/icon/apricot-color.png" alt="apricot color">Apricot</label>
+                        </div>
+                        <div class="flex gap-2">
+                            <input  type="checkbox" name="black" id="black" >
+                            <label class="neutral100 font-medium flex items-center gap-2" flex  for="black"><img src="./assets/images/icon/black-color.png" alt="Black">Black</label>
+                        </div>
+                        <div class="flex gap-2">
+                    
+                            <input  class="" type="checkbox" name="black-white" id="black-white" >
+                            <label class="neutral100 font-medium  flex items-center gap-2"  for="black-white"><img src="./assets/images/icon/black-white-color.png" alt="black white">Black & White</label>
+                        </div>
+                        <div class="flex gap-2">
+                            <input  type="checkbox" name="silver" id="silver" >
+                            <label class="neutral100 font-medium  flex items-center gap-2"  for="silver"><img src="./assets/images/icon/silver-color.png" alt="silver color">Silver</label>
+                            
+                        </div>
+                        <div class="flex gap-2">
+                            <input  class="" type="checkbox" name="female" id="female" >
+                            <label class="neutral100 font-medium flex items-center gap-2"  for="silver"><img src="./assets/images/icon/tan-color.png" alt="Tan color">Tan</label>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="price pt-3 pb-3">
+                    <h2 class="price-title neutral100 font-bold">Price</h2>
+                    <div class="content-price flex gap-3">
+                        <div class="items-price flex gap-2 relative border-b-[#EBEEEF]">
+                            <label for="min">Min</label>
+                            <input type="number" id="min" name="min" min="1" max="5" class="ps-[10px]">
+                            <img class="arrow absolute right-0 top-[5px] hover:hidden" src="./assets/images/icon/price-arrow.png" alt="Price arrow">
+                        </div>
+                        <div class="items-price flex gap-2 relative border-b-[#EBEEEF]">
+                            <label for="max">Max</label>
+                            <input type="number" id="max" name="max" min="1" max="5" class="ps-[10px]">
+                            <img class="arrow absolute right-0 top-[5px] hover:hidden" src="./assets/images/icon/price-arrow.png" alt="Price arrow">
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="breed pt-3">
+                    <h2 class="breed-title neutral100 font-bold">Breed</h2>
+                    <div class="flex items-center gap-2 ">
+                        <input  class="" type="checkbox" name="small" id="small" ><label class="neutral100 font-medium flex items-center gap-2"  for="small">Small</label> <br>
+                    </div>
+                    <div class="flex items-center gap-2 ">
+                        <input  class="" type="checkbox" name="medium" id="medium" ><label class="neutral100 font-medium flex items-center gap-2"  for="medium">Medium</label> <br>
+                    </div>
+                    <div class="flex items-center gap-2 ">
+                        <input  class="" type="checkbox" name="large" id="large" ><label class="neutral100 font-medium flex items-center gap-2"  for="large">Large</label>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="result-filter w-[78%]">
+                <div class="title-result flex justify-between flex-wrap">
+                    <div class="flex items-end gap-3">
+                        <h2 class="text-[24px] font-bold primary-color-dark-blue">Small Dog</h2>
+                        <span class="neutral60 font-medium">52 puppies</span>
+                    </div>
+
+                    <div class="select-sort rounded-[20px] flex items-center border-[#CCD1D2] border-[1px] text-[#667479]">
+                        <p>Sort by: </p>
+                        <select name="sort" id="sort" class="outline-0">
+                            <option value="popular">Popular</option>
+                            <option value="medium">Medium</option>
+                            <option value="pauve">pauve</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="content-result mt-5 flex justify-center flex-wrap">
+                    <a href="#" class="items-result p-[8px]  rounded-[12px] flex flex-col w-[32%]">
+                        <img class="" src="./assets/images/illustration/poodle-tiny-yellow.png" alt="poodle-tiny-yellow">
+                        <div class="description-donnee ps-1">
+                            <h3 class="primary-color-dark-blue80 font-bold pt-4">MO502 - Poodle Tiny Yellow</h3>
+                            <span class="neutral60 text-[13px] pt-1">Gene: <b>Female</b> . Age: <b>02 months</b></span>
+                            <h3 class="primary-color-dark-blue80 font-bold pt-1 pb-2">3.900.000 VND</h3>
+                        </div>
+                    </a>
+
+                    <a href="#" class="items-result p-[8px]  rounded-[12px] flex flex-col w-[32%]">
+                        <img class="" src="./assets/images/illustration/poodle-tiny-yellow.png" alt="poodle-tiny-yellow">
+                        <div class="description-donnee ps-1">
+                            <h3 class="primary-color-dark-blue80 font-bold pt-4">MO502 - Poodle Tiny Yellow</h3>
+                            <span class="neutral60 text-[13px] pt-1">Gene: <b>Female</b> . Age: <b>02 months</b></span>
+                            <h3 class="primary-color-dark-blue80 font-bold pt-1 pb-2">3.900.000 VND</h3>
+                        </div>
+                    </a>
+
+                    <a href="#" class="items-result p-[8px]  rounded-[12px] flex flex-col w-[32%]">
+                        <img class="" src="./assets/images/illustration/poodle-tiny-yellow.png" alt="poodle-tiny-yellow">
+                        <div class="description-donnee ps-1">
+                            <h3 class="primary-color-dark-blue80 font-bold pt-4">MO502 - Poodle Tiny Yellow</h3>
+                            <span class="neutral60 text-[13px] pt-1">Gene: <b>Female</b> . Age: <b>02 months</b></span>
+                            <h3 class="primary-color-dark-blue80 font-bold pt-1 pb-2">3.900.000 VND</h3>
+                        </div>
+                    </a>
+
+                    <a href="#" class="items-result p-[8px]  rounded-[12px] flex flex-col w-[32%]">
+                        <img class="" src="./assets/images/illustration/poodle-tiny-yellow.png" alt="poodle-tiny-yellow">
+                        <div class="description-donnee ps-1">
+                            <h3 class="primary-color-dark-blue80 font-bold pt-4">MO502 - Poodle Tiny Yellow</h3>
+                            <span class="neutral60 text-[13px] pt-1">Gene: <b>Female</b> . Age: <b>02 months</b></span>
+                            <h3 class="primary-color-dark-blue80 font-bold pt-1 pb-2">3.900.000 VND</h3>
+                        </div>
+                    </a>
+
+                    <a href="#" class="items-result p-[8px]  rounded-[12px] flex flex-col w-[32%]">
+                        <img class="" src="./assets/images/illustration/poodle-tiny-yellow.png" alt="poodle-tiny-yellow">
+                        <div class="description-donnee ps-1">
+                            <h3 class="primary-color-dark-blue80 font-bold pt-4">MO502 - Poodle Tiny Yellow</h3>
+                            <span class="neutral60 text-[13px] pt-1">Gene: <b>Female</b> . Age: <b>02 months</b></span>
+                            <h3 class="primary-color-dark-blue80 font-bold pt-1 pb-2">3.900.000 VND</h3>
+                        </div>
+                    </a>
+
+                    <a href="#" class="items-result p-[8px]  rounded-[12px] flex flex-col w-[32%]">
+                        <img class="" src="./assets/images/illustration/poodle-tiny-yellow.png" alt="poodle-tiny-yellow">
+                        <div class="description-donnee ps-1">
+                            <h3 class="primary-color-dark-blue80 font-bold pt-4">MO502 - Poodle Tiny Yellow</h3>
+                            <span class="neutral60 text-[13px] pt-1">Gene: <b>Female</b> . Age: <b>02 months</b></span>
+                            <h3 class="primary-color-dark-blue80 font-bold pt-1 pb-2">3.900.000 VND</h3>
+                        </div>
+                    </a>
+
+                    <a href="#" class="items-result p-[8px]  rounded-[12px] flex flex-col w-[32%]">
+                        <img class="" src="./assets/images/illustration/poodle-tiny-yellow.png" alt="poodle-tiny-yellow">
+                        <div class="description-donnee ps-1">
+                            <h3 class="primary-color-dark-blue80 font-bold pt-4">MO502 - Poodle Tiny Yellow</h3>
+                            <span class="neutral60 text-[13px] pt-1">Gene: <b>Female</b> . Age: <b>02 months</b></span>
+                            <h3 class="primary-color-dark-blue80 font-bold pt-1 pb-2">3.900.000 VND</h3>
+                        </div>
+                    </a>
+
+                    <a href="#" class="items-result p-[8px]  rounded-[12px] flex flex-col w-[32%]">
+                        <img class="" src="./assets/images/illustration/poodle-tiny-yellow.png" alt="poodle-tiny-yellow">
+                        <div class="description-donnee ps-1">
+                            <h3 class="primary-color-dark-blue80 font-bold pt-4">MO502 - Poodle Tiny Yellow</h3>
+                            <span class="neutral60 text-[13px] pt-1">Gene: <b>Female</b> . Age: <b>02 months</b></span>
+                            <h3 class="primary-color-dark-blue80 font-bold pt-1 pb-2">3.900.000 VND</h3>
+                        </div>
+                    </a>
+
+                    <a href="#" class="items-result p-[8px]  rounded-[12px] flex flex-col w-[32%]">
+                        <img class="" src="./assets/images/illustration/poodle-tiny-yellow.png" alt="poodle-tiny-yellow">
+                        <div class="description-donnee ps-1">
+                            <h3 class="primary-color-dark-blue80 font-bold pt-4">MO502 - Poodle Tiny Yellow</h3>
+                            <span class="neutral60 text-[13px] pt-1">Gene: <b>Female</b> . Age: <b>02 months</b></span>
+                            <h3 class="primary-color-dark-blue80 font-bold pt-1 pb-2">3.900.000 VND</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
