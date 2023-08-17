@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
 </head>
 <body class="m-0">
-    <div class="contenair-category h-screen relative">
+    <div class="contenair-category relative">
         <div class="container m-auto bg-[#FCEED5] ">
             <header class="flex gap-[101px] pb-3 w-full justify-between fixed pt-3 z-[51] bg-[#FCEED5] ps-[40px] pr-[40px] left-0">
                 <div class="logo flex justify-center items-center">
@@ -72,6 +72,9 @@
 
         <div class="liste-small-dog container m-auto flex flex-wrap gap-5 mt-8">
             <div class="filter-dog w-1/5">
+                <div class="mb-2">
+                    <h2 class="text-[24px] font-bold primary-color-dark-blue">Filter</h2>
+                </div>
                 <div class="gender pb-3">
                     <h2 class="title-genre neutral100 font-bold">Gender</h2>
                     <input  type="checkbox" name="male" id="male" ><label class="neutral100 font-medium"  for="male">       Male</label><br>
@@ -106,8 +109,8 @@
                             
                         </div>
                         <div class="flex gap-2">
-                            <input  class="" type="checkbox" name="female" id="female" >
-                            <label class="neutral100 font-medium flex items-center gap-2"  for="silver"><img src="./assets/images/icon/tan-color.png" alt="Tan color">Tan</label>
+                            <input  class="" type="checkbox" name="tan" id="tan" >
+                            <label class="neutral100 font-medium flex items-center gap-2"  for="tan"><img src="./assets/images/icon/tan-color.png" alt="Tan color">Tan</label>
                         </div>
                     </div>
                 </div>
@@ -165,92 +168,218 @@
                     </div>
                 </div>
 
-                <div class="content-result mt-5 flex justify-center flex-wrap">
-                    <a href="#" class="items-result p-[8px]  rounded-[12px] flex flex-col w-[32%]">
-                        <img class="" src="./assets/images/illustration/poodle-tiny-yellow.png" alt="poodle-tiny-yellow">
-                        <div class="description-donnee ps-1">
-                            <h3 class="primary-color-dark-blue80 font-bold pt-4">MO502 - Poodle Tiny Yellow</h3>
-                            <span class="neutral60 text-[13px] pt-1">Gene: <b>Female</b> . Age: <b>02 months</b></span>
-                            <h3 class="primary-color-dark-blue80 font-bold pt-1 pb-2">3.900.000 VND</h3>
-                        </div>
-                    </a>
+                <div class="">
+                    <div class="content-result mt-5 flex justify-between flex-wrap gap-4">
 
-                    <a href="#" class="items-result p-[8px]  rounded-[12px] flex flex-col w-[32%]">
-                        <img class="" src="./assets/images/illustration/poodle-tiny-yellow.png" alt="poodle-tiny-yellow">
-                        <div class="description-donnee ps-1">
-                            <h3 class="primary-color-dark-blue80 font-bold pt-4">MO502 - Poodle Tiny Yellow</h3>
-                            <span class="neutral60 text-[13px] pt-1">Gene: <b>Female</b> . Age: <b>02 months</b></span>
-                            <h3 class="primary-color-dark-blue80 font-bold pt-1 pb-2">3.900.000 VND</h3>
-                        </div>
-                    </a>
+                        <a href="./page/product-detail.html" class="items-result p-[8px]  rounded-[12px] flex flex-col w-[32%]">
+                            <img class="h-[303px]" src="./assets/images/illustration/shiba-inu-sepia.png" alt="shiba-inu-sepia">
+                            <div class="description-donnee ps-1">
+                                <h3 class="primary-color-dark-blue80 font-bold pt-4">Shiba Inu Sepia</h3>
+                                <span class="neutral60 text-[13px] pt-1">Gene: <b>Female</b> . Age: <b>02 months</b></span>
+                                <h3 class="primary-color-dark-blue80 font-bold pt-1 pb-2">34.000.000 VND</h3>
+                            </div>
+                        </a>
 
-                    <a href="#" class="items-result p-[8px]  rounded-[12px] flex flex-col w-[32%]">
-                        <img class="" src="./assets/images/illustration/poodle-tiny-yellow.png" alt="poodle-tiny-yellow">
-                        <div class="description-donnee ps-1">
-                            <h3 class="primary-color-dark-blue80 font-bold pt-4">MO502 - Poodle Tiny Yellow</h3>
-                            <span class="neutral60 text-[13px] pt-1">Gene: <b>Female</b> . Age: <b>02 months</b></span>
-                            <h3 class="primary-color-dark-blue80 font-bold pt-1 pb-2">3.900.000 VND</h3>
-                        </div>
-                    </a>
+                        <a href="#" class="items-result p-[8px]  rounded-[12px] flex flex-col w-[32%]">
+                            <img class="" src="./assets/images/illustration/poodle-tiny-yellow.png" alt="poodle-tiny-yellow">
+                            <div class="description-donnee ps-1">
+                                <h3 class="primary-color-dark-blue80 font-bold pt-4">MO502 - Poodle Tiny Yellow</h3>
+                                <span class="neutral60 text-[13px] pt-1">Gene: <b>Female</b> . Age: <b>02 months</b></span>
+                                <h3 class="primary-color-dark-blue80 font-bold pt-1 pb-2">3.900.000 VND</h3>
+                            </div>
+                        </a>
+    
+                        <a href="#" class="items-result p-[8px]  rounded-[12px] flex flex-col w-[32%]">
+                            <img class="" src="./assets/images/illustration/poodle-tiny-sepia.png" alt="poodle-tiny-sepia">
+                            <div class="description-donnee ps-1">
+                                <h3 class="primary-color-dark-blue80 font-bold pt-4">MO102 - Poodle Tiny Sepia</h3>
+                                <span class="neutral60 text-[13px] pt-1">Gene: <b>Male</b> . Age: <b>02 months</b></span>
+                                <h3 class="primary-color-dark-blue80 font-bold pt-1 pb-2">4.000.000 VND</h3>
+                            </div>
+                        </a>
+    
+                        <a href="#" class="items-result p-[8px]  rounded-[12px] flex flex-col w-[32%]">
+                            <img class="" src="./assets/images/illustration/alaskan-malamute-grey.png" alt="alaskan-malamute-grey">
+                            <div class="description-donnee ps-1">
+                                <h3 class="primary-color-dark-blue80 font-bold pt-4">MO512 - Alaskan Malamute Grey</h3>
+                                <span class="neutral60 text-[13px] pt-1">Gene: <b>Male</b> . Age: <b>02 months</b></span>
+                                <h3 class="primary-color-dark-blue80 font-bold pt-1 pb-2">8.900.000 VND</h3>
+                            </div>
+                        </a>
+    
+                        <a href="#" class="items-result p-[8px]  rounded-[12px] flex flex-col w-[32%]">
+                            <img class="" src="./assets/images/illustration/pembroke-corgi-tricolor.png" alt="pembroke-corgi-tricolor">
+                            <div class="description-donnee ps-1">
+                                <h3 class="primary-color-dark-blue80 font-bold pt-4">MO502 - Pembroke Corgi Tricolor</h3>
+                                <span class="neutral60 text-[13px] pt-1">Gene: <b>Female</b> . Age: <b>02 months</b></span>
+                                <h3 class="primary-color-dark-blue80 font-bold pt-1 pb-2">9.000.000 VND</h3>
+                            </div>
+                        </a>
+    
+                        <a href="#" class="items-result p-[8px]  rounded-[12px] flex flex-col w-[32%]">
+                            <img class="" src="./assets/images/illustration/pembroke-corgi-cream.png" alt="pembroke-corgi-cream">
+                            <div class="description-donnee ps-1">
+                                <h3 class="primary-color-dark-blue80 font-bold pt-4">MO231 - Pembroke Corgi Cream</h3>
+                                <span class="neutral60 text-[13px] pt-1">Gene: <b>Male</b> . Age: <b>02 months</b></span>
+                                <h3 class="primary-color-dark-blue80 font-bold pt-1 pb-2">7.900.000 VND</h3>
+                            </div>
+                        </a>
+    
+                        <a href="#" class="items-result p-[8px]  rounded-[12px] flex flex-col w-[32%]">
+                            <img class="" src="./assets/images/illustration/pomeranian-white-1.png" alt="pomeranian-white-1">
+                            <div class="description-donnee ps-1">
+                                <h3 class="primary-color-dark-blue80 font-bold pt-4">MO231 - Pomeranian White</h3>
+                                <span class="neutral60 text-[13px] pt-1">Gene: <b>Female</b> . Age: <b>02 months</b></span>
+                                <h3 class="primary-color-dark-blue80 font-bold pt-1 pb-2">6.500.000 VND</h3>
+                            </div>
+                        </a>
+    
+                        <a href="#" class="items-result p-[8px]  rounded-[12px] flex flex-col w-[32%]">
+                            <img class="" src="./assets/images/illustration/pomeranian-white.png" alt="pomeranian-white">
+                            <div class="description-donnee ps-1">
+                                <h3 class="primary-color-dark-blue80 font-bold pt-4">MO231 - Pomeranian White</h3>
+                                <span class="neutral60 text-[13px] pt-1">Gene: <b>Male</b> . Age: <b>02 months</b></span>
+                                <h3 class="primary-color-dark-blue80 font-bold pt-1 pb-2">6.900.000 VND</h3>
+                            </div>
+                        </a>
+    
+                        <a href="#" class="items-result p-[8px]  rounded-[12px] flex flex-col w-[32%]">
+                            <img class="" src="./assets/images/illustration/alaskan-malamute-grey.png" alt="alaskan-malamute-grey">
+                            <div class="description-donnee ps-1">
+                                <h3 class="primary-color-dark-blue80 font-bold pt-4">MO512 - Alaskan Malamute Grey/h3>
+                                <span class="neutral60 text-[13px] pt-1">Gene: <b>Male</b> . Age: <b>02 months</b></span>
+                                <h3 class="primary-color-dark-blue80 font-bold pt-1 pb-2">8.900.000 VND</h3>
+                            </div>
+                        </a>
+    
+                        <a href="#" class="items-result p-[8px]  rounded-[12px] flex flex-col w-[32%]">
+                            <img class="" src="./assets/images/illustration/poodle-tiny-dairy-cow.png" alt="poodle-tiny-dairy-cow">
+                            <div class="description-donnee ps-1">
+                                <h3 class="primary-color-dark-blue80 font-bold pt-4">MO512 - Poodle Tiny Dairy Cow</h3>
+                                <span class="neutral60 text-[13px] pt-1">Gene: <b>Male</b> . Age: <b>02 months</b></span>
+                                <h3 class="primary-color-dark-blue80 font-bold pt-1 pb-2">5.000.000 VND</h3>
+                            </div>
+                        </a>
+    
+                        <a href="#" class="items-result p-[8px]  rounded-[12px] flex flex-col w-[32%]">
+                            <img class="" src="./assets/images/illustration/poodle-tiny-yellow.png" alt="poodle-tiny-yellow">
+                            <div class="description-donnee ps-1">
+                                <h3 class="primary-color-dark-blue80 font-bold pt-4">MO502 - Poodle Tiny Yellow</h3>
+                                <span class="neutral60 text-[13px] pt-1">Gene: <b>Female</b> . Age: <b>02 months</b></span>
+                                <h3 class="primary-color-dark-blue80 font-bold pt-1 pb-2">3.900.000 VND</h3>
+                            </div>
+                        </a>
+    
+                        <a href="#" class="items-result p-[8px]  rounded-[12px] flex flex-col w-[32%]">
+                            <img class="" src="./assets/images/illustration/poodle-tiny-sepia.png" alt="poodle-tiny-sepia">
+                            <div class="description-donnee ps-1">
+                                <h3 class="primary-color-dark-blue80 font-bold pt-4">MO102 - Poodle Tiny Sepia</h3>
+                                <span class="neutral60 text-[13px] pt-1">Gene: <b>Male</b> . Age: <b>02 months</b></span>
+                                <h3 class="primary-color-dark-blue80 font-bold pt-1 pb-2">4.000.000 VND</h3>
+                            </div>
+                        </a>
+    
+                        <a href="#" class="items-result p-[8px]  rounded-[12px] flex flex-col w-[32%]">
+                            <img class="" src="./assets/images/illustration/alaskan-malamute-grey.png" alt="alaskan-malamute-grey">
+                            <div class="description-donnee ps-1">
+                                <h3 class="primary-color-dark-blue80 font-bold pt-4">MO512 - Alaskan Malamute Grey</h3>
+                                <span class="neutral60 text-[13px] pt-1">Gene: <b>Male</b> . Age: <b>02 months</b></span>
+                                <h3 class="primary-color-dark-blue80 font-bold pt-1 pb-2">8.900.000 VND</h3>
+                            </div>
+                        </a>
+    
+                        <a href="#" class="items-result p-[8px]  rounded-[12px] flex flex-col w-[32%]">
+                            <img class="" src="./assets/images/illustration/pembroke-corgi-tricolor.png" alt="pembroke-corgi-tricolor">
+                            <div class="description-donnee ps-1">
+                                <h3 class="primary-color-dark-blue80 font-bold pt-4">MO502 - Pembroke Corgi Tricolor</h3>
+                                <span class="neutral60 text-[13px] pt-1">Gene: <b>Female</b> . Age: <b>02 months</b></span>
+                                <h3 class="primary-color-dark-blue80 font-bold pt-1 pb-2">9.000.000 VND</h3>
+                            </div>
+                        </a>
+    
+                        <a href="#" class="items-result p-[8px]  rounded-[12px] flex flex-col w-[32%]">
+                            <img class="" src="./assets/images/illustration/pembroke-corgi-cream.png" alt="pembroke-corgi-cream">
+                            <div class="description-donnee ps-1">
+                                <h3 class="primary-color-dark-blue80 font-bold pt-4">MO231 - Pembroke Corgi Cream</h3>
+                                <span class="neutral60 text-[13px] pt-1">Gene: <b>Male</b> . Age: <b>02 months</b></span>
+                                <h3 class="primary-color-dark-blue80 font-bold pt-1 pb-2">7.900.000 VND</h3>
+                            </div>
+                        </a>
+    
+                        <a href="#" class="items-result p-[8px]  rounded-[12px] flex flex-col w-[32%]">
+                            <img class="" src="./assets/images/illustration/pomeranian-white-1.png" alt="pomeranian-white-1">
+                            <div class="description-donnee ps-1">
+                                <h3 class="primary-color-dark-blue80 font-bold pt-4">MO231 - Pomeranian White</h3>
+                                <span class="neutral60 text-[13px] pt-1">Gene: <b>Female</b> . Age: <b>02 months</b></span>
+                                <h3 class="primary-color-dark-blue80 font-bold pt-1 pb-2">6.500.000 VND</h3>
+                            </div>
+                        </a>
+                    </div>
 
-                    <a href="#" class="items-result p-[8px]  rounded-[12px] flex flex-col w-[32%]">
-                        <img class="" src="./assets/images/illustration/poodle-tiny-yellow.png" alt="poodle-tiny-yellow">
-                        <div class="description-donnee ps-1">
-                            <h3 class="primary-color-dark-blue80 font-bold pt-4">MO502 - Poodle Tiny Yellow</h3>
-                            <span class="neutral60 text-[13px] pt-1">Gene: <b>Female</b> . Age: <b>02 months</b></span>
-                            <h3 class="primary-color-dark-blue80 font-bold pt-1 pb-2">3.900.000 VND</h3>
-                        </div>
-                    </a>
-
-                    <a href="#" class="items-result p-[8px]  rounded-[12px] flex flex-col w-[32%]">
-                        <img class="" src="./assets/images/illustration/poodle-tiny-yellow.png" alt="poodle-tiny-yellow">
-                        <div class="description-donnee ps-1">
-                            <h3 class="primary-color-dark-blue80 font-bold pt-4">MO502 - Poodle Tiny Yellow</h3>
-                            <span class="neutral60 text-[13px] pt-1">Gene: <b>Female</b> . Age: <b>02 months</b></span>
-                            <h3 class="primary-color-dark-blue80 font-bold pt-1 pb-2">3.900.000 VND</h3>
-                        </div>
-                    </a>
-
-                    <a href="#" class="items-result p-[8px]  rounded-[12px] flex flex-col w-[32%]">
-                        <img class="" src="./assets/images/illustration/poodle-tiny-yellow.png" alt="poodle-tiny-yellow">
-                        <div class="description-donnee ps-1">
-                            <h3 class="primary-color-dark-blue80 font-bold pt-4">MO502 - Poodle Tiny Yellow</h3>
-                            <span class="neutral60 text-[13px] pt-1">Gene: <b>Female</b> . Age: <b>02 months</b></span>
-                            <h3 class="primary-color-dark-blue80 font-bold pt-1 pb-2">3.900.000 VND</h3>
-                        </div>
-                    </a>
-
-                    <a href="#" class="items-result p-[8px]  rounded-[12px] flex flex-col w-[32%]">
-                        <img class="" src="./assets/images/illustration/poodle-tiny-yellow.png" alt="poodle-tiny-yellow">
-                        <div class="description-donnee ps-1">
-                            <h3 class="primary-color-dark-blue80 font-bold pt-4">MO502 - Poodle Tiny Yellow</h3>
-                            <span class="neutral60 text-[13px] pt-1">Gene: <b>Female</b> . Age: <b>02 months</b></span>
-                            <h3 class="primary-color-dark-blue80 font-bold pt-1 pb-2">3.900.000 VND</h3>
-                        </div>
-                    </a>
-
-                    <a href="#" class="items-result p-[8px]  rounded-[12px] flex flex-col w-[32%]">
-                        <img class="" src="./assets/images/illustration/poodle-tiny-yellow.png" alt="poodle-tiny-yellow">
-                        <div class="description-donnee ps-1">
-                            <h3 class="primary-color-dark-blue80 font-bold pt-4">MO502 - Poodle Tiny Yellow</h3>
-                            <span class="neutral60 text-[13px] pt-1">Gene: <b>Female</b> . Age: <b>02 months</b></span>
-                            <h3 class="primary-color-dark-blue80 font-bold pt-1 pb-2">3.900.000 VND</h3>
-                        </div>
-                    </a>
-
-                    <a href="#" class="items-result p-[8px]  rounded-[12px] flex flex-col w-[32%]">
-                        <img class="" src="./assets/images/illustration/poodle-tiny-yellow.png" alt="poodle-tiny-yellow">
-                        <div class="description-donnee ps-1">
-                            <h3 class="primary-color-dark-blue80 font-bold pt-4">MO502 - Poodle Tiny Yellow</h3>
-                            <span class="neutral60 text-[13px] pt-1">Gene: <b>Female</b> . Age: <b>02 months</b></span>
-                            <h3 class="primary-color-dark-blue80 font-bold pt-1 pb-2">3.900.000 VND</h3>
-                        </div>
-                    </a>
+                    <div class="primary-color-dark-blue80 font-bold flex gap-3 justify-center mt-5 mb-5">
+                        <a href="#" class="h-[34px] w-[34px] flex items-center justify-center rounded-[8px]">
+                            <img src="./assets/images/icon/Arrow_left_SM.png" alt="">
+                        </a>
+                        <a href="#" class="h-[34px] w-[34px] flex items-center justify-center rounded-[8px] bg-[#002A48] text-[#FDFDFD]">1</a>
+                        <a href="#" class="h-[34px] w-[34px] flex items-center justify-center rounded-[8px] hover:bg-[#002A48] hover:text-[#FDFDFD]">2</a>
+                        <a href="#" class="h-[34px] w-[34px] flex items-center justify-center rounded-[8px] hover:bg-[#002A48] hover:text-[#FDFDFD]">3</a>
+                        <a href="#" class="h-[34px] w-[34px] flex items-center justify-center rounded-[8px] hover:bg-[#002A48] hover:text-[#FDFDFD]">4</a>
+                        <a href="#" class="h-[34px] w-[34px] flex items-center justify-center rounded-[8px] hover:bg-[#002A48] hover:text-[#FDFDFD]">...</a>
+                        <a href="#" class="h-[34px] w-[34px] flex items-center justify-center rounded-[8px] hover:bg-[#002A48] hover:text-[#FDFDFD]">28</a>
+                        <a href="#" class="h-[34px] w-[34px] flex items-center justify-center rounded-[8px]">
+                            <img src="./assets/images/icon/Arrow_Right_SM.png" alt="">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <footer class="bg-[#FCEED5] mt-6">
+            <div class="container m-auto pt-[90px]">
+                <div class="register-footer flex flex-wrap p-8 bg-[#003459] rounded-2xl justify-between">
+                    <div class="title-register w-[30%]">
+                        <h2 class="text-[24px] font-bold text-[#FDFDFD]">Register now so you don t miss <br> Our programs</h2>
+                    </div>
+                    <div class="subcribe-footer w-[70%] flex items-center justify-end gap-2 p-[12px] bg-white rounded-[14px]">
+                        <input type="text" class=" h-full w-[80%] input-default" placeholder="Enter your Email">
+                        <a href="#" class="button-footer h-full w-[20%]">Subcribe Now</a>
+                    </div>
+                </div>
+    
+                <div class="menu-footer mt-[50px] flex flex-wrap justify-between">
+                    <ul class="flex gap-11 items-center">
+                        <li><a href="#" class="font-medium neutral100 text-[16px]">Home</a></li>
+                        <li><a href="#" class="font-medium neutral100 text-[16px]">Category</a></li>
+                        <li><a href="#" class="font-medium neutral100 text-[16px]">About</a></li>
+                        <li><a href="#" class="font-medium neutral100 text-[16px]">Contact</a></li>
+                    </ul>
+    
+                    <div class="icon-menu-footer flex flex-wrap gap-5 justify-between items-center">
+                        <a href="#"><img src="./assets/images/icon/facebook-icon.png" alt="Facebook"></a>
+                        <a href="#"><img src="./assets/images/icon/twitter-icon.png" alt="Twitter"></a>
+                        <a href="#"><img src="./assets/images/icon/instagram-icon.png" alt="Instagram"></a>
+                        <a href="#"><img src="./assets/images/icon/youtube-icon.png" alt="Youtube"></a>
+                    </div>
+                </div>
+    
+                <div class="signatur-footer flex justify-between items-center mt-[50px]">
+                    <div class="neutral60 font-medium text-[14px]"> © 2022 Monito. All rights reserved.</div>
+                    <div>
+                        <img src="./assets/images/icon/logo.png" alt="Logo">
+                    </div>
+    
+                    <div class="neutral60 font-medium text-[14px] flex gap-6 pb-[40px]">
+                        <div>Terms of Service</div>
+                        <div>Privacy Policy</div>
+                    </div>
+                </div>
+            </div>
+    
+           
+        </footer>
     </div>
 
+    
     
 </body>
 </html>
