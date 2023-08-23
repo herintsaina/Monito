@@ -11,8 +11,8 @@
 <body class="m-0 ">
     
     <div class="contenair-banner h-screen relative">
-        <div class="container m-auto bg-[#FCEED5] ">
-            <header class="flex gap-[101px] pb-3 w-full justify-between fixed pt-3 z-[51] bg-[#FCEED5] ps-[40px] pr-[40px] left-0">
+        <div id="menu-header"  class="container m-auto  ">
+            <header class="min-[414px]:hidden"  class="flex gap-[101px] pb-3 w-full justify-between fixed  pt-3 z-[51] ps-[40px] pr-[40px] left-0">
                 <div class="logo flex justify-center items-center">
                     <img src="./assets/images/icon/logo.png" alt="Logo" >
                 </div>
@@ -38,11 +38,50 @@
                     </div>
                 </div>
             </header>
+
+            <!-- /********* MENU MOBILE ************/ -->
+
+            <header id="top">
+                <a href="#menus" class="modalOpen" hidden><img src="./assets/images/icon/Hamburger_MD.png" alt=""></a>
+                <a href="#" class="m-auto"><img class="m-auto " src="./assets/images/icon/logo-mobile.png" alt=""></a>
+                <a href="#" class="m-auto"><img class="m-auto relative -right-[30px]" src="./assets/images/icon/search-mobile.png" alt=""></a>
+                <nav id="menus">
+                  <a href="#" class="modalClose" hidden></a>
+                  <div>
+                    <a href="#" class="modalClose" hidden></a>
+                    <ul id="mainMenu">
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">Category</a></li>
+                      <li><a href="#">Collections</a></li>
+                      <li><a href="#">Contact Us</a></li>
+                    </ul>
+                    <ul id="userMenu">
+                      <li>
+                        <a href="#">
+                          <i class="far fa-heart"></i>
+                          <span>No Clue WTF the heart means</span>
+                        </a>
+                      </li><li>
+                        <a href="#" class="hasItems">
+                          <i class="fas fa-shopping-cart"></i>
+                          <span>Shopping Cart</span>
+                        </a>
+                      </li><li>
+                        <a href="#">
+                          <i class="far fa-user-circle"></i>
+                          <span>Account Settings</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+            
+              <!-- #top --></header>
         </div>
     
         <div class="container m-auto  h-full z-50 relative">
-            <div class="content-banner  flex justify-between items-center h-full">
-                <div class="tilte-presentation w-2/5">
+            <div class="content-banner  flex flex-wrap justify-between items-center h-full" class="">
+                <div class="min-[414px]:w-full min-[1440px]:w-2/5" class="tilte-presentation w-2/5" >
                     <h1 class="text-[60px] primary-color-dark-blue font-bold ">One more friend</h1>
                     <h2 class="text-[46px] primary-color-dark-blue font-bold">Thousands More Fun!</h2>
                     <p class="neutral80">Having a pet means you have more joy, a new
@@ -56,7 +95,7 @@
                         <a class="button-default" href="#">Explore Now</a>
                     </div>
                 </div>
-                <div class="picture-banner w-3/5">
+                <div class="min-[414px]:w-full min-[1440px]:w-3/5" class="picture-banner w-3/5" >
                 </div>
                 
             </div>
@@ -438,6 +477,6 @@
        
     </footer>
     
-    <script src="app.js"></script>
+    <script type="module" src="./app.js"></script>
 </body>
 </html>

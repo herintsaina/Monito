@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+</head>
+<script>
+</script>
+<style>
+    /* start reset */
+
+html,body,div,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,
+form,fieldset,caption,table,tr,td,th,address,blockquote,img {
+	margin:0;
+	padding:0;
+}
+
+img, fieldset {
+	border:none;
+}
+
+*, *:after, *:before {
+	box-sizing:border-box;
+	flex:1 0 auto;
+}
+
+hr {
+	display:none;
+}
+
+html, body {
+	height:100%;
+}
+
+legend {
+	float:left;
+	width:100%;
+}
+
+button {
+	cursor:pointer;
+}
+
+body, button, input, table, textarea, select {
+	font:normal 1em/1.5 "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+}
+
+/* end reset, start explanation */
+
+main {
+  max-width:32em;
+  margin:1em auto 0;
+}
+
+main p {
+  margin-bottom:1em;
+}
+
+/* end explanation, start rewrite */
+
+#top {
+	display:flex;
+	background:#000;
+  align-items: center;
+}
+
+/* h1 {
+	flex-grow:0;
+	padding:1.375rem 2rem;
+	font-size:1.5em;
+} */
+
+#top a {
+	color:#FFF;
+	text-decoration:none;
+}
+
+#menus {
+	text-align:center;
+}
+
+#menus > div {
+	display:flex;
+}
+
+#menus li {
+	display:inline;
+	list-style:none;
+}
+
+#menus li > a {
+	position:relative;
+	display:inline-block;
+	padding:1.75rem 0.5rem;
+	transition:transform 0.3s;
+}
+
+#menus li > a:focus,
+#menus li > a:hover {
+	transform:scale(1.2);
+}
+
+#menus a span {
+	position:absolute;
+	left:-999em;
+}
+
+#userMenu {
+	flex-grow:0;
+	font-size:1.25em;
+	line-height:1.2;
+	padding:0 2rem;
+}
+
+#userMenu .hasItems:after {
+	content:"";
+	position:absolute;
+	top:1.5rem;
+	right:0;
+	width:0.5em;
+	height:0.5em;
+	background:#F4C;
+	border-radius:0.25em;
+	animation:ping 1s infinite;
+}
+
+@keyframes ping {
+	75% { box-shadow:0 0 0 #F4C0 }
+	100% { box-shadow:0 0 0.0625em 0.0625em #F4CC }
+}
+
+@media (max-width:40em) {
+	h1 {
+		flex-grow:1;
+	}
+	#top a[class^="modal"] {
+		display:block; /* undo hidden attribute */
+	}
+	#top .modalOpen {
+		flex-grow:0;
+		padding:0.875rem 2rem;
+	}
+	#top .modalOpen:before,
+	#menus > div > .modalClose:before {
+		font-size:2em;
+		font-family:"Font Awesome 5 Free";
+		font-weight: 900;
+	}
+	#top .modalOpen:before {
+		content:" ";
+    /* background-image: url('./assets/images/icon/Hamburger_MD.png');
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 32px;
+    transform: translate(-10px, 10px); */
+	}
+	#menus > div > .modalClose:before {
+		content:"\f00D";
+		color:#F00;
+	}
+	#menus {
+		display:flex;
+		align-items:center;
+		justify-content:center;
+		position:fixed;
+		left:-100vw;
+		top:0;
+		opacity:0;
+		width:100%;
+		height:100%;
+		padding:min(1em, 2vw);
+		overflow:hidden;
+		background:#0008;
+		box-shadow:inset 0 0 128px 128px #0008;
+		transition:left 0s 0.5s, opacity 0.5s;
+	}
+	#menus > .modalClose {
+		position:absolute;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+	}
+	#menus:target {
+		left:0;
+		opacity:1;
+		transition:left 0s, top 0.5s, opacity 0.5s;
+	}
+	#menus div {
+		max-width:20em;
+		flex-grow:0;
+		flex-direction:column;
+		position:relative;
+		top:-100vh;
+		padding-bottom:1em;
+		background:#000;
+		border-radius:0.5em;
+		box-shadow:0 0.5em 1em 0.5em #0008;
+		transition:top 0.5s;
+	}
+	#menus > div:before {
+		content:"Main Menu";
+		display:block;
+		text-align:left;
+		font-size:1.25em;
+		padding:1rem 1.25rem;
+		color:#FFF;
+		border-bottom:0.125em solid #333;
+	}
+	#menus > div .modalClose {
+		position:absolute;
+		top:0.5rem;
+		right:1.25rem;
+	}
+	#menus:target div {
+		top:0;
+	}
+	#mainMenu {
+		display:flex;
+		flex-wrap:wrap;
+		padding:0.5rem 1rem 0;
+	}
+	#mainMenu li {
+		width:34%;
+	}
+	#mainMenu li > a {
+		display:block;
+		padding:0.75em 0.25em;
+	}
+	#userMenu {
+		flex-grow:1;
+	}
+	#userMenu li > a {
+		padding:0.75em;
+	}
+}
+</style>
+<body>
+  <header id="top">
+    <a href="#menus" class="modalOpen" hidden><img src="./assets/images/icon/Hamburger_MD.png" alt=""></a>
+    <a href="#" class="m-auto"><img class="m-auto " src="./assets/images/icon/logo-mobile.png" alt=""></a>
+    <a href="#" class="m-auto"><img class="mr-0 " src="./assets/images/icon/search-mobile.png" alt=""></a>
+    <nav id="menus">
+      <a href="#" class="modalClose" hidden></a>
+      <div>
+        <a href="#" class="modalClose" hidden></a>
+        <ul id="mainMenu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Category</a></li>
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+        <ul id="userMenu">
+          <li>
+            <a href="#">
+              <i class="far fa-heart"></i>
+              <span>No Clue WTF the heart means</span>
+            </a>
+          </li><li>
+            <a href="#" class="hasItems">
+              <i class="fas fa-shopping-cart"></i>
+              <span>Shopping Cart</span>
+            </a>
+          </li><li>
+            <a href="#">
+              <i class="far fa-user-circle"></i>
+              <span>Account Settings</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  <!-- #top --></header>
+  
+  <!-- <main>
+    <p>
+      The above menu is a rewrite in vanilla HTML and CSS of a <a href="https://tailwindcomponents.com/component/navbar-hamburger-menu-for-ecommerce">Tailwind component "Navbar and Hamburger Menu"</a> illustrating how badly coded EVERYTHING built in Failwind really is.
+    </p><p>
+      Narrow your display to hide the main menu and show the hamburger icon. Unlike the original which didn't actually even implement a behavior for the menu on mobile, you'll find the menu becomes a modal dialog.
+    </p><p>
+    Please visit the <a href="https://deathshadow.medium.com/tailwind-to-vanilla-2-two-shining-examples-262b640e044d">medium article explaining this rewrite.</a>
+    </p>
+  </main> -->
+</body>
+</html>

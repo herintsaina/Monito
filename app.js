@@ -24,3 +24,22 @@ var slideIndex = 1;
             slides[slideIndex-1].style.display = "block";
             dots[slideIndex-1].className += " active";
         }
+
+/********* MENU SCROLL ************ */
+
+window.addEventListener('scroll', menuScroll);
+
+function menuScroll() {
+    var scrollPosition = window.scrollY;
+
+    if (scrollPosition > 100) {
+        document.getElementById('menu-header').classList.add('menu-scroll');
+    } else {
+        document.getElementById('menu-header').classList.remove('menu-scroll');
+    }
+}
+
+function checkedMenu() {
+    location.reload();
+
+}
