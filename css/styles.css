@@ -572,6 +572,7 @@ body, button, input, table, textarea, select {
     }
 }
 
+
 /************************************ ***********************/
 
 /* RESPONSIVE MENU MOBILE  */
@@ -598,6 +599,12 @@ body, button, input, table, textarea, select {
         display: block;
     }
     
+    /****** banner ********/
+
+    .content-banner {
+        max-width: 80%;
+        margin: auto;
+    }
 }
 
 @media (min-width:1024px) {
@@ -622,4 +629,13 @@ body, button, input, table, textarea, select {
     .join-menu {
         display: block;
     }
+}
+
+.picture-banner {
+    perspective: 768px;
+    perspective-origin: bottom right;
+}
+
+.picture-banner img{
+    transform: translate3d(0,0,180px);
 }
