@@ -108,8 +108,9 @@ body {
     border: 1.5px solid #003459;
     border-radius: 57px;
     color: #003459;
-    display: flex;
+    /* display: flex; */
     align-items: center;
+    justify-content: center;
     gap: 8px;
 }
 
@@ -412,7 +413,7 @@ body, button, input, table, textarea, select {
     z-index: 600;
 }
 
-#menus > div {
+#menus > .menu-mobile-content {
 	display:flex;
 }
 
@@ -471,10 +472,10 @@ body, button, input, table, textarea, select {
 	}
 	#top .modalOpen {
 		flex-grow:0;
-		padding:0.875rem 2rem;
+		padding:0.875rem 1rem;
 	}
 	#top .modalOpen:before,
-	#menus > div > .modalClose:before {
+	#menus > .menu-mobile-content > .modalClose:before {
 		font-size:2em;
 		font-family:"Font Awesome 5 Free";
 		font-weight: 900;
@@ -488,9 +489,11 @@ body, button, input, table, textarea, select {
     height: 32px;
     transform: translate(-10px, 10px); */
 	}
-	#menus > div > .modalClose:before {
-		content:"\f00D";
-		color:#F00;
+	#menus > .menu-mobile-content > .modalClose:before {
+		content:" ";
+		background-image: url('../assets/images/icon/icons8-close-23.png');
+        /* height: 100%;
+        width: 100%; */
 	}
 	#menus {
 		display:flex;
@@ -518,7 +521,7 @@ body, button, input, table, textarea, select {
 		opacity:1;
 		transition:left 0s, top 0.5s, opacity 0.5s;
 	}
-	#menus div {
+	#menus .menu-mobile-content {
         width: 100%;
         height: 70%;
         flex-direction: column;
@@ -529,21 +532,24 @@ body, button, input, table, textarea, select {
         box-shadow: 0 0.5em 1em 0.5em #0008;
         transition: top 0.5s;
 	}
-	#menus > div:before {
+	#menus > .menu-mobile-content:before {
 		content:"Main Menu";
 		display:block;
 		text-align:left;
 		font-size:1.25em;
 		padding:1rem 1.25rem;
-		color:#FFF;
-		border-bottom:0.125em solid #333;
+		color:#003459;
 	}
-	#menus > div .modalClose {
+	#menus > .menu-mobile-content .modalClose {
 		position:absolute;
 		top:0.5rem;
 		right:1.25rem;
 	}
-	#menus:target div {
+
+    #menus > .menu-mobile-content .modalClose img{
+		padding: 10px 0px 10px 10px;
+	}
+	#menus:target .menu-mobile-content {
 		top:0;
 	}
 	#mainMenu {
@@ -602,9 +608,16 @@ body, button, input, table, textarea, select {
     /****** banner ********/
 
     .content-banner {
-        max-width: 80%;
+        max-width: 92%;
         margin: auto;
     }
+
+    .content-take-look {
+        max-width: 92%;
+        margin: auto;
+    }
+
+
 }
 
 @media (min-width:1024px) {
@@ -621,13 +634,21 @@ body, button, input, table, textarea, select {
     }
 }
 
-@media (min-width:1360px) {
+@media (min-width:1366px) {
     .select-menu {
         display: block;
     }
 
     .join-menu {
         display: block;
+    }
+
+    .content-banner {
+        max-width: 100%;
+    }
+
+    .content-take-look {
+        max-width: 100%;
     }
 }
 
