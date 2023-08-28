@@ -617,6 +617,16 @@ body, button, input, table, textarea, select {
         margin: auto;
     }
 
+    .content-picture-female-dog {
+        max-width: 92%;
+        margin: auto;
+    }
+
+    .content-Our-Products {
+        max-width: 92%;
+        margin: auto;
+    }
+
 
 }
 
@@ -648,6 +658,14 @@ body, button, input, table, textarea, select {
     }
 
     .content-take-look {
+        max-width: 100%;
+    }
+
+    .content-picture-female-dog {
+        max-width: 100%;
+    }
+
+    .content-Our-Products  {
         max-width: 100%;
     }
 }

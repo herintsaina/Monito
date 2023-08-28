@@ -648,6 +648,10 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.mb-9 {
+  margin-bottom: 2.25rem;
+}
+
 .mr-0 {
   margin-right: 0px;
 }
@@ -1000,6 +1004,11 @@ video {
      object-position: left;
 }
 
+.object-top {
+  -o-object-position: top;
+     object-position: top;
+}
+
 .p-3 {
   padding: 0.75rem;
 }
@@ -1223,12 +1232,20 @@ video {
 }
 
 @media (min-width: 320px) {
+  .min-\[320px\]\:mt-5 {
+    margin-top: 1.25rem;
+  }
+
   .min-\[320px\]\:block {
     display: block;
   }
 
   .min-\[320px\]\:hidden {
     display: none;
+  }
+
+  .min-\[320px\]\:h-\[640px\] {
+    height: 640px;
   }
 
   .min-\[320px\]\:w-\[48\%\] {
@@ -1247,8 +1264,16 @@ video {
     justify-content: center;
   }
 
+  .min-\[320px\]\:justify-between {
+    justify-content: space-between;
+  }
+
   .min-\[320px\]\:gap-3 {
     gap: 0.75rem;
+  }
+
+  .min-\[320px\]\:gap-\[10px\] {
+    gap: 10px;
   }
 
   .min-\[320px\]\:pr-0 {
@@ -1300,6 +1325,24 @@ video {
   }
 }
 
+@media (min-width: 1024px) {
+  .min-\[1024px\]\:flex {
+    display: flex;
+  }
+
+  .min-\[1024px\]\:h-full {
+    height: 100%;
+  }
+
+  .min-\[1024px\]\:justify-end {
+    justify-content: flex-end;
+  }
+
+  .min-\[1024px\]\:gap-5 {
+    gap: 1.25rem;
+  }
+}
+
 @media (min-width: 1360px) {
   .min-\[1360px\]\:w-2\/5 {
     width: 40%;
@@ -1311,6 +1354,10 @@ video {
 }
 
 @media (min-width: 1366px) {
+  .min-\[1366px\]\:mt-0 {
+    margin-top: 0px;
+  }
+
   .min-\[1366px\]\:block {
     display: block;
   }
