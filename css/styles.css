@@ -650,6 +650,26 @@ body, button, input, table, textarea, select {
         margin: auto;
     }
 
+    .content-small-dog {
+        max-width: 92%;
+        margin: auto;
+    }
+
+    .tilte-presentation-mobile {
+        max-width: 92%;
+        margin: auto;
+    }
+
+    .filter-dog {
+        max-width: 92%;
+        margin: auto;
+    }
+
+    .result-filter {
+        max-width: 92%;
+        margin: auto;
+    }
+
 }
 
 @media (min-width:1024px) {
@@ -709,7 +729,23 @@ body, button, input, table, textarea, select {
         
         max-width: 100%;
     }
+
+    .content-small-dog {
+        max-width: 100%;
     }
+
+    .tilte-presentation-mobile {
+        max-width: 100%;
+    }
+
+    .filter-dog {
+        max-width: 100%;
+    }
+
+    .result-filter {
+        max-width: 100%;
+    }
+}
 
 .picture-banner {
     perspective: 768px;
