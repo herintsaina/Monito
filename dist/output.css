@@ -1283,6 +1283,10 @@ video {
     flex-direction: column-reverse;
   }
 
+  .min-\[320px\]\:flex-wrap {
+    flex-wrap: wrap;
+  }
+
   .min-\[320px\]\:items-center {
     align-items: center;
   }
@@ -1347,6 +1351,10 @@ video {
 
   .min-\[320px\]\:pt-\[60px\] {
     padding-top: 60px;
+  }
+
+  .min-\[320px\]\:pt-\[70px\] {
+    padding-top: 70px;
   }
 
   .min-\[320px\]\:text-center {
@@ -1554,6 +1562,10 @@ video {
 
   .min-\[1366px\]\:flex-row {
     flex-direction: row;
+  }
+
+  .min-\[1366px\]\:flex-nowrap {
+    flex-wrap: nowrap;
   }
 
   .min-\[1366px\]\:items-end {

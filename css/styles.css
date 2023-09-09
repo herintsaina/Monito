@@ -342,7 +342,7 @@ body {
 }
 
 .menu-scroll {
-    background-color: #FCEED5;
+    background-color: #F7DBA7;
 }
 
 /************ MENU MOBILE **********************/
@@ -755,6 +755,7 @@ body, button, input, table, textarea, select {
 
     .filter-dog {
         max-width: 100%;
+        margin: 0;
     }
 
     .result-filter {
