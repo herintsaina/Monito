@@ -499,7 +499,7 @@ body, button, input, table, textarea, select {
 		display:flex;
 		justify-content:center;
 		position:fixed;
-		left:-100vw;
+		left:100vw;
 		top:0;
 		opacity:0;
 		width:100%;
@@ -670,6 +670,21 @@ body, button, input, table, textarea, select {
         margin: auto;
     }
 
+    .detail-dog {
+        max-width: 92%;
+        margin: auto;
+    }
+
+    .our-lovely {
+        max-width:92%;
+        margin: auto;
+    }
+
+    .seeMore {
+        max-width: 92%;
+        margin: auto;
+    }
+
 }
 
 @media (min-width:1024px) {
@@ -743,6 +758,18 @@ body, button, input, table, textarea, select {
     }
 
     .result-filter {
+        max-width: 100%;
+    }
+
+    .detail-dog {
+        max-width: 100%;
+    }
+
+    .our-lovely {
+        max-width: 100%;
+    }
+
+    .seeMore {
         max-width: 100%;
     }
 }
