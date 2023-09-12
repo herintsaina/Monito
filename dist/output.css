@@ -580,10 +580,6 @@ video {
   position: relative;
 }
 
-.-right-\[80px\] {
-  right: -80px;
-}
-
 .bottom-0 {
   bottom: 0px;
 }
@@ -622,10 +618,6 @@ video {
 
 .z-\[1\] {
   z-index: 1;
-}
-
-.z-\[51\] {
-  z-index: 51;
 }
 
 .z-\[700\] {
@@ -728,10 +720,6 @@ video {
   height: 100%;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
 .w-1\/2 {
   width: 50%;
 }
@@ -748,10 +736,6 @@ video {
   width: 10px;
 }
 
-.w-\[20\%\] {
-  width: 20%;
-}
-
 .w-\[20px\] {
   width: 20px;
 }
@@ -760,20 +744,8 @@ video {
   width: 23%;
 }
 
-.w-\[30\%\] {
-  width: 30%;
-}
-
 .w-\[34px\] {
   width: 34px;
-}
-
-.w-\[70\%\] {
-  width: 70%;
-}
-
-.w-\[80\%\] {
-  width: 80%;
 }
 
 .w-\[92\%\] {
@@ -988,21 +960,8 @@ video {
      object-position: left;
 }
 
-.object-top {
-  -o-object-position: top;
-     object-position: top;
-}
-
 .p-3 {
   padding: 0.75rem;
-}
-
-.p-5 {
-  padding: 1.25rem;
-}
-
-.p-8 {
-  padding: 2rem;
 }
 
 .p-\[12px\] {
@@ -1086,16 +1045,8 @@ video {
   padding-top: 1.25rem;
 }
 
-.pt-\[110px\] {
-  padding-top: 110px;
-}
-
 .pt-\[12px\] {
   padding-top: 12px;
-}
-
-.pt-\[17px\] {
-  padding-top: 17px;
 }
 
 .pt-\[90px\] {
@@ -1263,16 +1214,16 @@ video {
     width: 45%;
   }
 
+  .min-\[320px\]\:w-\[47\%\] {
+    width: 47%;
+  }
+
   .min-\[320px\]\:w-\[48\%\] {
     width: 48%;
   }
 
   .min-\[320px\]\:w-full {
     width: 100%;
-  }
-
-  .min-\[320px\]\:w-\[47\%\] {
-    width: 47%;
   }
 
   .min-\[320px\]\:flex-col {
@@ -1324,12 +1275,12 @@ video {
        object-position: top;
   }
 
-  .min-\[320px\]\:p-\[1rem\] {
-    padding: 1rem;
-  }
-
   .min-\[320px\]\:p-0 {
     padding: 0px;
+  }
+
+  .min-\[320px\]\:p-\[1rem\] {
+    padding: 1rem;
   }
 
   .min-\[320px\]\:pr-0 {
@@ -1347,10 +1298,6 @@ video {
 
   .min-\[320px\]\:pt-\[40px\] {
     padding-top: 40px;
-  }
-
-  .min-\[320px\]\:pt-\[60px\] {
-    padding-top: 60px;
   }
 
   .min-\[320px\]\:pt-\[70px\] {
@@ -1592,12 +1539,12 @@ video {
     gap: 1.25rem;
   }
 
-  .min-\[1366px\]\:p-8 {
-    padding: 2rem;
-  }
-
   .min-\[1366px\]\:p-5 {
     padding: 1.25rem;
+  }
+
+  .min-\[1366px\]\:p-8 {
+    padding: 2rem;
   }
 
   .min-\[1366px\]\:pr-\[6\.5rem\] {
@@ -1609,12 +1556,12 @@ video {
             padding-inline-start: 6.5rem;
   }
 
-  .min-\[1366px\]\:pt-\[90px\] {
-    padding-top: 90px;
-  }
-
   .min-\[1366px\]\:pt-\[110px\] {
     padding-top: 110px;
+  }
+
+  .min-\[1366px\]\:pt-\[90px\] {
+    padding-top: 90px;
   }
 
   .min-\[1366px\]\:text-left {
